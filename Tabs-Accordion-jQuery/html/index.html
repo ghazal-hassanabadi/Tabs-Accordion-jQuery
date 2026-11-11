@@ -2,11 +2,245 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>Accordion و Tabs</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./tailwind/tailwind.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اسکیلورا | آکادمی آنلاین</title>
+  <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="p-8 max-w-xl mx-auto space-y-10">
+
+<body id="top" class="bg-brand-cream text-brand-ink antialiased">
+
+  <!-- هدر -->
+  <header class="fixed inset-x-3 top-3 z-50 mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full bg-white/70 px-5 py-3 shadow-sm backdrop-blur">
+    <a href="#top" class="flex items-center gap-2 text-xl font-extrabold">
+      <span aria-hidden="true">🎓</span>
+      Skillora
+    </a>
+
+    <nav aria-label="منوی اصلی" class="hidden md:block">
+      <ul class="flex items-center gap-6 text-sm text-brand-ink/70">
+        <li><a href="#top" class="border-b-2 border-brand-sand pb-1 text-brand-ink">خانه</a></li>
+        <li><a href="#courses" class="transition hover:text-brand-ink">دوره‌ها</a></li>
+        <li><a href="#why" class="transition hover:text-brand-ink">درباره ما</a></li>
+        <li><a href="#faq" class="transition hover:text-brand-ink">تماس با ما</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <form role="search" class="hidden md:block">
+        <input type="search" placeholder="جستجو در دوره‌ها..." class="w-44 rounded-full bg-brand-cream px-4 py-2 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand">
+      </form>
+      <a href="#" aria-label="حساب کاربری" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow-sm">👤</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- هیرو -->
+    <section class="relative flex min-h-[34rem] items-center overflow-hidden pb-16 pt-32">
+      <img src="images/hero.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-l from-brand-cream/90 via-brand-cream/60 to-transparent"></div>
+
+      <div class="mx-auto w-full max-w-6xl px-5">
+        <div class="max-w-xl">
+          <p class="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-sand/50 px-4 py-1 text-xs">
+            <span class="h-2 w-2 rounded-full bg-brand-ink"></span>
+            آکادمی آنلاین اسکیلورا
+          </p>
+          <h1 class="text-4xl font-extrabold leading-snug md:text-5xl">
+            مهارت‌های آینده را
+            <span class="rounded-lg bg-brand-sand/60 px-2">امروز</span>
+            یاد بگیر!
+          </h1>
+          <p class="mt-5 leading-8 text-brand-ink/70">
+            دوره‌های کاربردی و پروژه‌محور برای رشد فردی و حرفه‌ای شما در دنیای مدرن.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-4">
+            <a href="#courses" class="rounded-full bg-brand-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-ink/85">مشاهده دوره‌ها</a>
+            <a href="#why" class="flex items-center gap-3 text-sm">
+              <span aria-hidden="true" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow">▶</span>
+              معرفی پلتفرم
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- دسته‌بندی و دوره -->
+    <section id="courses" class="mx-auto max-w-6xl px-5 py-10">
+      <nav aria-label="دسته‌بندی دوره‌ها">
+        <ul class="flex gap-2 overflow-x-auto">
+          <li class="shrink-0"><a href="#courses" class="block rounded-t-2xl bg-brand-ink px-6 py-4 text-sm text-white">📷 عکاسی و تدوین</a></li>
+          <li class="shrink-0"><a href="#courses" class="block rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white">✏️ طراحی و گرافیک</a></li>
+          <li class="shrink-0"><a href="#courses" class="block rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white">🌐 زبان‌های خارجی</a></li>
+          <li class="shrink-0"><a href="#courses" class="block rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white">📊 بازاریابی دیجیتال</a></li>
+          <li class="shrink-0"><a href="#courses" class="block rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white">🤖 هوش مصنوعی</a></li>
+          <li class="shrink-0"><a href="#courses" class="block rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white">💼 کسب‌وکار</a></li>
+        </ul>
+      </nav>
+
+      <article class="grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
+        <div>
+          <h2 class="text-xl font-bold">📷 دوره عکاسی حرفه‌ای</h2>
+          <p class="mt-3 text-sm leading-7 text-brand-ink/70">از عکاسی پایه تا ویرایش پیشرفته، با ما نگاهت را حرفه‌ای‌تر کن.</p>
+
+          <ul class="mt-6 space-y-3">
+            <li>
+              <details class="group rounded-2xl bg-brand-cream" open>
+                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
+                  مبانی عکاسی
+                  <span aria-hidden="true" class="transition group-open:rotate-180">⌄</span>
+                </summary>
+                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">نور، ترکیب‌بندی و تنظیمات دوربین را از پایه یاد می‌گیری.</p>
+              </details>
+            </li>
+            <li>
+              <details class="group rounded-2xl bg-brand-cream">
+                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
+                  ویرایش عکس
+                  <span aria-hidden="true" class="transition group-open:rotate-180">⌄</span>
+                </summary>
+                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">رنگ‌بندی، روتوش و ساخت یک سبک ثابت برای عکس‌هایت.</p>
+              </details>
+            </li>
+            <li>
+              <details class="group rounded-2xl bg-brand-cream">
+                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
+                  عکاسی با موبایل
+                  <span aria-hidden="true" class="transition group-open:rotate-180">⌄</span>
+                </summary>
+                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">با گوشی هم می‌شود عکس حرفه‌ای گرفت؛ ترفندها را یاد می‌گیری.</p>
+              </details>
+            </li>
+          </ul>
+
+          <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
+        </div>
+
+        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+          <img src="images/photographer.jpg" alt="عکاسی که دوربین در دست دارد" class="h-64 w-full object-cover md:h-80">
+          <figcaption class="absolute inset-0 grid place-items-center">
+            <span aria-hidden="true" class="grid h-16 w-16 place-items-center rounded-full border-2 border-white text-2xl text-white">▶</span>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <!-- چرا اسکیلورا -->
+    <section id="why" class="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-extrabold">چرا اسکیلورا؟</h2>
+        <p class="mt-3 leading-8 text-brand-ink/70">ما اینجا هستیم تا یادگیری را برای شما ساده‌تر، جذاب‌تر و کاربردی‌تر کنیم.</p>
+
+        <ul class="mt-6 grid grid-cols-3 gap-3">
+          <li class="rounded-2xl bg-white p-4 text-center text-sm shadow-sm"><span aria-hidden="true" class="mb-2 block text-2xl">🎓</span>صدور مدرک معتبر</li>
+          <li class="rounded-2xl bg-white p-4 text-center text-sm shadow-sm"><span aria-hidden="true" class="mb-2 block text-2xl">🎧</span>پشتیبانی حرفه‌ای</li>
+          <li class="rounded-2xl bg-white p-4 text-center text-sm shadow-sm"><span aria-hidden="true" class="mb-2 block text-2xl">📘</span>اساتید متخصص</li>
+        </ul>
+
+        <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">بیشتر بدانید</a>
+      </div>
+
+      <figure class="relative overflow-hidden rounded-3xl bg-brand-ink text-white">
+        <img src="images/laptop-dark.jpg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40">
+        <figcaption class="relative p-8">
+          <h3 class="text-2xl font-extrabold leading-snug">
+            یک قدم جلوتر
+            <span class="block text-brand-sand">در مسیر پیشرفت</span>
+          </h3>
+          <p class="mt-4 text-sm leading-7 text-brand-cream/80">با دوره‌های متنوع ما، مهارت‌های موردنیاز بازار کار را کسب کنید.</p>
+          <a href="#" class="mt-6 inline-block rounded-full border border-white/70 px-6 py-2.5 text-sm transition hover:bg-white hover:text-brand-ink">مشاهده ویدیو</a>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- سوالات متداول -->
+    <section id="faq" class="mx-auto max-w-6xl px-5 py-10">
+      <div class="grid gap-8 rounded-3xl bg-brand-sand/40 p-6 md:grid-cols-[1fr_2fr] md:p-10">
+        <figure class="hidden md:block">
+          <img src="images/learn-more.png" alt="کتاب‌ها و فنجان قهوه" class="h-full w-full rounded-2xl object-cover">
+        </figure>
+
+        <div>
+          <h2 class="text-xl font-bold">سوالات متداول</h2>
+          <p class="mt-2 text-sm text-brand-ink/70">پاسخ پرتکرارترین سوالات کاربران در این بخش قرار داده شده است.</p>
+
+          <ul class="mt-6 space-y-3">
+            <li>
+              <details class="group rounded-2xl bg-white">
+                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
+                  آیا دوره‌ها دارای مدرک هستند؟
+                  <span aria-hidden="true" class="transition group-open:rotate-180">⌄</span>
+                </summary>
+                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">بله، پس از پایان هر دوره مدرک معتبر صادر می‌شود.</p>
+              </details>
+            </li>
+            <li>
+              <details class="group rounded-2xl bg-white">
+                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
+                  چگونه در دوره‌ها شرکت کنم؟
+                  <span aria-hidden="true" class="transition group-open:rotate-180">⌄</span>
+                </summary>
+                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">ثبت‌نام کنید، دوره را انتخاب کنید و بلافاصله شروع کنید.</p>
+              </details>
+            </li>
+            <li>
+              <details class="group rounded-2xl bg-white">
+                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
+                  آیا امکان پرداخت اقساطی وجود دارد؟
+                  <span aria-hidden="true" class="transition group-open:rotate-180">⌄</span>
+                </summary>
+                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">برای دوره‌های بالاتر از مبلغ مشخص، پرداخت اقساطی فعال است.</p>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- فوتر -->
+  <footer class="mt-10 bg-brand-ink text-brand-mist">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-4">
+      <section>
+        <p class="text-xl font-extrabold text-white">🎓 Skillora</p>
+        <p class="mt-2 text-sm">یادگیری، یک قدم تا موفقیت</p>
+      </section>
+
+      <nav aria-label="لینک‌های سریع">
+        <h2 class="mb-3 font-bold text-white">لینک‌های سریع</h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#top" class="transition hover:text-white">خانه</a></li>
+          <li><a href="#courses" class="transition hover:text-white">دوره‌ها</a></li>
+          <li><a href="#why" class="transition hover:text-white">درباره ما</a></li>
+          <li><a href="#faq" class="transition hover:text-white">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="دسته‌بندی‌ها">
+        <h2 class="mb-3 font-bold text-white">دسته‌بندی‌ها</h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="transition hover:text-white">عکاسی و تدوین</a></li>
+          <li><a href="#" class="transition hover:text-white">طراحی و گرافیک</a></li>
+          <li><a href="#" class="transition hover:text-white">زبان‌های خارجی</a></li>
+          <li><a href="#" class="transition hover:text-white">بازاریابی دیجیتال</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h2 class="mb-3 font-bold text-white">ما را دنبال کنید</h2>
+        <ul class="flex gap-3">
+          <li><a href="#" aria-label="تلگرام" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">✈</a></li>
+          <li><a href="#" aria-label="اینستاگرام" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">◎</a></li>
+          <li><a href="#" aria-label="یوتیوب" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">▶</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <p class="border-t border-white/10 py-5 text-center text-xs">© 2025 Skillora. All rights reserved.</p>
+  </footer>
+
+  <a href="#top" aria-label="بازگشت به بالا" class="fixed bottom-5 start-5 z-40 grid h-11 w-11 place-items-center rounded-full bg-brand-ink text-white shadow-lg transition hover:bg-brand-ink/85">↑</a>
 
 </body>
 </html>
