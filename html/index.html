@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>اسکیلورا | آکادمی آنلاین</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../tailwind/tailwind.css" />
 </head>
 
@@ -47,8 +50,7 @@
             آکادمی آنلاین اسکیلورا
           </p>
           <h1 class="text-4xl font-extrabold leading-snug md:text-5xl">
-            مهارت‌های آینده را
-            <span class="rounded-lg bg-brand-sand/60 px-2">امروز</span>
+            مهارت‌های آینده را امروز
             یاد بگیر!
           </h1>
           <p class="mt-5 leading-8 text-brand-ink/70">
@@ -117,10 +119,8 @@
         </div>
 
         <figure class="relative overflow-hidden rounded-2xl md:order-first">
-          <img src="images/photographer.jpg" alt="عکاسی که دوربین در دست دارد" class="h-64 w-full object-cover md:h-80">
-          <figcaption class="absolute inset-0 grid place-items-center">
-            <span aria-hidden="true" class="grid h-16 w-16 place-items-center rounded-full border-2 border-white text-2xl text-white">▶</span>
-          </figcaption>
+          <img src="images/p1.png" alt="عکاسی که دوربین در دست دارد" class="h-64 w-full object-cover md:h-80 xl:h-102">
+
         </figure>
       </article>
     </section>
@@ -141,7 +141,7 @@
       </div>
 
       <figure class="relative overflow-hidden rounded-3xl bg-brand-ink text-white">
-        <img src="images/laptop-dark.jpg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40">
+        <img src="images/m1.png" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40 xl:h-90">
         <figcaption class="relative p-8">
           <h3 class="text-2xl font-extrabold leading-snug">
             یک قدم جلوتر
@@ -154,17 +154,18 @@
     </section>
 
     <!-- سوالات متداول -->
+
     <section id="faq" class="mx-auto max-w-6xl px-5 py-10">
-      <div class="grid gap-8 rounded-3xl bg-brand-sand/40 p-6 md:grid-cols-[1fr_2fr] md:p-10">
-        <figure class="hidden md:block">
-          <img src="images/learn-more.png" alt="کتاب‌ها و فنجان قهوه" class="h-full w-full rounded-2xl object-cover">
-        </figure>
+  <div class="relative overflow-hidden rounded-3xl bg-sand/40">
 
-        <div>
-          <h2 class="text-xl font-bold">سوالات متداول</h2>
-          <p class="mt-2 text-sm text-brand-ink/70">پاسخ پرتکرارترین سوالات کاربران در این بخش قرار داده شده است.</p>
+    <img src="images/ask question.png" alt="کتاب‌ها و فنجان قهوه"
+         class="absolute inset-y-0 right-0 hidden h-full w-auto max-w-none md:block rounded-2xl">
 
-          <ul class="mt-6 space-y-3">
+    <div class="p-6 md:p-10 md:pr-96">
+      <h2 class="text-xl font-bold">سوالات متداول</h2>
+      <p class="mt-2 text-sm text-ink/70">پاسخ پرتکرارترین سوالات کاربران در این بخش قرار داده شده است.</p>
+
+      <ul class="mt-6 space-y-3">
             <li>
               <details class="group rounded-2xl bg-white">
                 <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
@@ -192,10 +193,13 @@
                 <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">برای دوره‌های بالاتر از مبلغ مشخص، پرداخت اقساطی فعال است.</p>
               </details>
             </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
 
   </main>
 
