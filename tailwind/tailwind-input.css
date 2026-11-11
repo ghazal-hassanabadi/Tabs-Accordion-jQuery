@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@source "../html";
+@source "../js";
+
+@theme {
+  --color-brand-ink: #202630;
+  --color-brand-cream: #F4EFE9;
+  --color-brand-sand: #D5C2AE;
+  --color-brand-mist: #A8A29A;
+
+  --font-sans: "Vazirmatn", Tahoma, sans-serif;
+}
