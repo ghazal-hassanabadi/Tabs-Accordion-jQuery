@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="../tailwind/tailwind.css" />
 </head>
 
@@ -70,24 +71,24 @@
     <!-- دسته‌بندی و دوره -->
     <section id="courses" class="mx-auto max-w-6xl px-5 py-10">
       <nav aria-label="دسته‌بندی دوره‌ها">
-        <ul class="flex gap-2 overflow-x-auto">
+        <ul class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] md:pb-0 [&::-webkit-scrollbar]:hidden">
           <li class="shrink-0">
-            <button type="button" data-tab="photo" aria-selected="true" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">📷 عکاسی و تدوین</button>
+            <button type="button" data-tab="photo" aria-selected="true" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">📷 عکاسی و تدوین</button>
           </li>
           <li class="shrink-0">
-            <button type="button" data-tab="design" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">✏️ طراحی و گرافیک</button>
+            <button type="button" data-tab="design" aria-selected="false" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">✏️ طراحی و گرافیک</button>
           </li>
           <li class="shrink-0">
-            <button type="button" data-tab="language" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">🌐 زبان‌های خارجی</button>
+            <button type="button" data-tab="language" aria-selected="false" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">🌐 زبان‌های خارجی</button>
           </li>
           <li class="shrink-0">
-            <button type="button" data-tab="marketing" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">📊 بازاریابی دیجیتال</button>
+            <button type="button" data-tab="marketing" aria-selected="false" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">📊 بازاریابی دیجیتال</button>
           </li>
           <li class="shrink-0">
-            <button type="button" data-tab="ai" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">🤖 هوش مصنوعی</button>
+            <button type="button" data-tab="ai" aria-selected="false" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">🤖 هوش مصنوعی</button>
           </li>
           <li class="shrink-0">
-            <button type="button" data-tab="business" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">💼 کسب‌وکار</button>
+            <button type="button" data-tab="business" aria-selected="false" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">💼 کسب‌وکار</button>
           </li>
         </ul>
       </nav>
@@ -125,7 +126,7 @@
           <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
         </div>
 
-        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+        <figure class="relative overflow-hidden rounded-2xl order-first">
           <img src="images/p1.png" alt="عکاسی که دوربین در دست دارد" class="h-64 w-full object-cover md:h-80 xl:h-102">
         </figure>
       </article>
@@ -163,7 +164,7 @@
           <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
         </div>
 
-        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+        <figure class="relative overflow-hidden rounded-2xl order-first">
           <img src="images/p2.png" alt="میز کار طراحی گرافیک" class="h-64 w-full object-cover md:h-80 xl:h-102">
         </figure>
       </article>
@@ -201,7 +202,7 @@
           <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
         </div>
 
-        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+        <figure class="relative overflow-hidden rounded-2xl order-first">
           <img src="images/p3.png" alt="دانشجویی که زبان یاد می‌گیرد" class="h-64 w-full object-cover md:h-80 xl:h-102">
         </figure>
       </article>
@@ -239,7 +240,7 @@
           <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
         </div>
 
-        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+        <figure class="relative overflow-hidden rounded-2xl order-first">
           <img src="images/p4.png" alt="نمودارهای تحلیل بازاریابی" class="h-64 w-full object-cover md:h-80 xl:h-102">
         </figure>
       </article>
@@ -277,7 +278,7 @@
           <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
         </div>
 
-        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+        <figure class="relative overflow-hidden rounded-2xl order-first">
           <img src="images/p5.png" alt="رباتی که کنار انسان کار می‌کند" class="h-64 w-full object-cover md:h-80 xl:h-102">
         </figure>
       </article>
@@ -315,7 +316,7 @@
           <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
         </div>
 
-        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+        <figure class="relative overflow-hidden rounded-2xl order-first">
           <img src="images/p6.png" alt="جلسه‌ی کاری یک تیم کسب‌وکار" class="h-64 w-full object-cover md:h-80 xl:h-102">
         </figure>
       </article>
@@ -433,9 +434,21 @@
       <section>
         <h2 class="mb-3 font-bold text-white">ما را دنبال کنید</h2>
         <ul class="flex gap-3">
-          <li><a href="#" aria-label="تلگرام" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">✈</a></li>
-          <li><a href="#" aria-label="اینستاگرام" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">◎</a></li>
-          <li><a href="#" aria-label="یوتیوب" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">▶</a></li>
+          <li>
+            <a href="#" aria-label="اینستاگرام" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-lg text-white transition hover:bg-white/20">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="تلگرام" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-lg text-white transition hover:bg-white/20">
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="لینکدین" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-lg text-white transition hover:bg-white/20">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </li>
         </ul>
       </section>
     </div>
