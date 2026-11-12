@@ -15,3 +15,12 @@ $(function () {
 
 /*--------tabs---------- */
 
+  $(".tab-btn").on("click", function () {
+    const name = $(this).data("tab");
+
+    $(".tab-btn").attr("aria-selected", "false");
+    $(this).attr("aria-selected", "true");
+
+    $(".tab-panel").addClass("hidden");
+    $(`[data-panel="${name}"]`).removeClass("hidden");
+  });

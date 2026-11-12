@@ -737,6 +737,12 @@
     --tw-outline-style: none;
     outline-style: none;
   }
+  .aria-selected\:bg-brand-ink[aria-selected="true"] {
+    background-color: var(--color-brand-ink);
+  }
+  .aria-selected\:text-white[aria-selected="true"] {
+    color: var(--color-white);
+  }
   @media (width >= 48rem) {
     .md\:order-first {
       order: -9999;
