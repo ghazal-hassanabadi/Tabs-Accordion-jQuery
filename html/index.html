@@ -29,12 +29,33 @@
       </ul>
     </nav>
 
-    <div class="flex items-center gap-2">
-      <form role="search" class="hidden md:block">
-        <input type="search" placeholder="جستجو در دوره‌ها..." class="w-44 rounded-full bg-brand-cream px-4 py-2 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand">
+<div class="flex items-center gap-2">
+  <form role="search" class="hidden md:block">
+    <input type="search" placeholder="جستجو در دوره‌ها..." class="w-44 rounded-full bg-brand-cream px-4 py-2 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand">
+  </form>
+
+  <button type="button" class="menu-btn grid h-10 w-10 cursor-pointer place-items-center rounded-full bg-white shadow-sm md:hidden" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-menu">
+    <svg class="menu-open h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+    <svg class="menu-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+  </button>
+
+  <a href="#" aria-label="حساب کاربری" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow-sm">👤</a>
+</div>
+
+
+    <nav id="mobile-menu" aria-label="منوی موبایل" class="mobile-menu absolute inset-x-0 top-full mt-2 hidden rounded-3xl bg-white p-4 shadow-lg md:hidden">
+      <ul class="space-y-1 text-sm">
+        <li><a href="#top" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">خانه</a></li>
+        <li><a href="#courses" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">دوره‌ها</a></li>
+        <li><a href="#why" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">درباره ما</a></li>
+        <li><a href="#faq" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">تماس با ما</a></li>
+      </ul>
+
+      <form role="search" class="mt-3">
+        <input type="search" placeholder="جستجو در دوره‌ها..." class="w-full rounded-full bg-brand-cream px-4 py-2.5 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand">
       </form>
-      <a href="#" aria-label="حساب کاربری" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow-sm">👤</a>
-    </div>
+    </nav>
+
   </header>
 
   <main>
@@ -73,7 +94,7 @@
       <nav aria-label="دسته‌بندی دوره‌ها">
         <ul class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] md:pb-0 [&::-webkit-scrollbar]:hidden">
           <li class="shrink-0">
-            <button type="button" data-tab="photo" aria-selected="true" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">📷 عکاسی و تدوین</button>
+            <button type="button" data-tab="photo" aria-selected="true" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">📷 عکاسی و تدوین</button> 
           </li>
           <li class="shrink-0">
             <button type="button" data-tab="design" aria-selected="false" class="tab-btn block cursor-pointer whitespace-nowrap rounded-full bg-white/60 px-4 py-2.5 text-sm text-brand-ink/70 transition hover:bg-white md:rounded-b-none md:rounded-t-2xl md:px-6 md:py-4 aria-selected:bg-brand-ink aria-selected:text-white">✏️ طراحی و گرافیک</button>
@@ -101,11 +122,11 @@
 
           <ul class="topic-list mt-6 space-y-3">
             <li class="rounded-2xl bg-brand-cream">
-              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
                 مبانی عکاسی
-                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
               </button>
-              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">نور، ترکیب‌بندی و تنظیمات دوربین را از پایه یاد می‌گیری.</p>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">نور، ترکیب‌بندی و تنظیمات دوربین را از پایه یاد می‌گیری.</p>
             </li>
             <li class="rounded-2xl bg-brand-cream">
               <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
@@ -139,11 +160,11 @@
 
           <ul class="topic-list mt-6 space-y-3">
             <li class="rounded-2xl bg-brand-cream">
-              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
                 اصول طراحی
-                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
               </button>
-              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">رنگ، تایپوگرافی، چیدمان و تعادل بصری را از پایه یاد می‌گیری.</p>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">رنگ، تایپوگرافی، چیدمان و تعادل بصری را از پایه یاد می‌گیری.</p>
             </li>
             <li class="rounded-2xl bg-brand-cream">
               <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
@@ -177,11 +198,11 @@
 
           <ul class="topic-list mt-6 space-y-3">
             <li class="rounded-2xl bg-brand-cream">
-              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
                 مکالمه‌ی روزمره
-                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
               </button>
-              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">با تمرین گفتگوهای واقعی، راحت و روان صحبت کردن را شروع می‌کنی.</p>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">با تمرین گفتگوهای واقعی، راحت و روان صحبت کردن را شروع می‌کنی.</p>
             </li>
             <li class="rounded-2xl bg-brand-cream">
               <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
@@ -215,11 +236,11 @@
 
           <ul class="topic-list mt-6 space-y-3">
             <li class="rounded-2xl bg-brand-cream">
-              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
                 مبانی بازاریابی دیجیتال
-                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
               </button>
-              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">مخاطب، هدف و مسیر جذب مشتری را از ابتدا درست تعریف می‌کنی.</p>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">مخاطب، هدف و مسیر جذب مشتری را از ابتدا درست تعریف می‌کنی.</p>
             </li>
             <li class="rounded-2xl bg-brand-cream">
               <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
@@ -253,11 +274,11 @@
 
           <ul class="topic-list mt-6 space-y-3">
             <li class="rounded-2xl bg-brand-cream">
-              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
                 آشنایی با هوش مصنوعی
-                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
               </button>
-              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">می‌فهمی هوش مصنوعی چیست، چه کارهایی می‌کند و چه محدودیت‌هایی دارد.</p>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">می‌فهمی هوش مصنوعی چیست، چه کارهایی می‌کند و چه محدودیت‌هایی دارد.</p>
             </li>
             <li class="rounded-2xl bg-brand-cream">
               <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
@@ -291,11 +312,11 @@
 
           <ul class="topic-list mt-6 space-y-3">
             <li class="rounded-2xl bg-brand-cream">
-              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
                 ایده‌پردازی و مدل کسب‌وکار
-                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
               </button>
-              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">ایده‌ات را می‌سنجی و به یک مدل قابل اجرا تبدیل می‌کنی.</p>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">ایده‌ات را می‌سنجی و به یک مدل قابل اجرا تبدیل می‌کنی.</p>
             </li>
             <li class="rounded-2xl bg-brand-cream">
               <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
@@ -329,18 +350,38 @@
         <h2 class="text-2xl font-extrabold">چرا اسکیلورا؟</h2>
         <p class="mt-3 leading-8 text-brand-ink/70">ما اینجا هستیم تا یادگیری را برای شما ساده‌تر، جذاب‌تر و کاربردی‌تر کنیم.</p>
 
-        <ul class="mt-6 grid grid-cols-3 gap-3">
-          <li class="rounded-2xl bg-white p-4 text-center text-sm shadow-sm"><span aria-hidden="true" class="mb-2 block text-2xl">🎓</span>صدور مدرک معتبر</li>
-          <li class="rounded-2xl bg-white p-4 text-center text-sm shadow-sm"><span aria-hidden="true" class="mb-2 block text-2xl">🎧</span>پشتیبانی حرفه‌ای</li>
-          <li class="rounded-2xl bg-white p-4 text-center text-sm shadow-sm"><span aria-hidden="true" class="mb-2 block text-2xl">📘</span>اساتید متخصص</li>
-        </ul>
+     <ul class="mt-6 space-y-3">
+       <li class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm">
+    <span aria-hidden="true" class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-cream text-2xl">🎓</span>
+    <div>
+      <h3 class="font-bold">صدور مدرک معتبر</h3>
+      <p class="mt-1 text-sm leading-6 text-brand-ink/70">بعد از پایان هر دوره، مدرک رسمی دریافت می‌کنی.</p>
+    </div>
+       </li>
+
+       <li class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm">
+         <span aria-hidden="true" class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-cream text-2xl">🎧</span>
+         <div>
+           <h3 class="font-bold">پشتیبانی حرفه‌ای</h3>
+           <p class="mt-1 text-sm leading-6 text-brand-ink/70">تیم پشتیبانی کنارت است تا مسیر یادگیری بدون مانع پیش برود.</p>
+         </div>
+       </li>
+
+       <li class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm">
+         <span aria-hidden="true" class="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-cream text-2xl">📘</span>
+         <div>
+           <h3 class="font-bold">اساتید متخصص</h3>
+           <p class="mt-1 text-sm leading-6 text-brand-ink/70">از اساتیدی یاد می‌گیری که در کار واقعی تجربه دارند.</p>
+         </div>
+       </li>
+     </ul>
 
         <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">بیشتر بدانید</a>
       </div>
 
       <figure class="relative overflow-hidden rounded-3xl bg-brand-ink text-white">
-        <img src="images/m1.png" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40 xl:h-90">
-        <figcaption class="relative p-8">
+        <img src="images/m1.png" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40 xl:h-110">
+        <figcaption class="relative p-8 xl:translate-y-24">
           <h3 class="text-2xl font-extrabold leading-snug">
             یک قدم جلوتر
             <span class="block text-brand-sand">در مسیر پیشرفت</span>

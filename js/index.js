@@ -42,3 +42,22 @@ $(function () {
       $(this).attr("aria-expanded", "true");
     }
   });
+
+/*--------mobile menu---------- */
+  $(".menu-btn").on("click", function () {
+    const menu = $(".mobile-menu");
+    menu.toggleClass("hidden");
+
+    const isOpen = !menu.hasClass("hidden");
+    $(this).attr("aria-expanded", isOpen);
+    $(".menu-open").toggleClass("hidden", isOpen);
+    $(".menu-close").toggleClass("hidden", !isOpen);
+  });
+
+
+  $(".mobile-menu a").on("click", function () {
+    $(".mobile-menu").addClass("hidden");
+    $(".menu-btn").attr("aria-expanded", "false");
+    $(".menu-open").removeClass("hidden");
+    $(".menu-close").addClass("hidden");
+  });
