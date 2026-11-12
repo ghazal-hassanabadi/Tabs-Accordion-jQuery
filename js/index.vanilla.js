@@ -76,3 +76,30 @@ topicButtons.forEach(function (btn) {
     }
   });
 });
+
+/*-------mobile-menu---------*/
+
+const menuBtn = document.querySelector(".menu-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+const menuOpen = document.querySelector(".menu-open");
+const menuClose = document.querySelector(".menu-close");
+
+function closeMenu() {
+  mobileMenu.classList.add("hidden");
+  menuBtn.setAttribute("aria-expanded", "false");
+  menuOpen.classList.remove("hidden");
+  menuClose.classList.add("hidden");
+}
+
+menuBtn.addEventListener("click", function () {
+  mobileMenu.classList.toggle("hidden");
+
+  const isOpen = !mobileMenu.classList.contains("hidden");
+  this.setAttribute("aria-expanded", isOpen);
+  menuOpen.classList.toggle("hidden", isOpen);
+  menuClose.classList.toggle("hidden", !isOpen);
+});
+
+mobileMenu.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", closeMenu);
+});
