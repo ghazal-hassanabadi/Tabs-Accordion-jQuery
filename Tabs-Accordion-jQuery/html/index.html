@@ -34,12 +34,14 @@
     <input type="search" placeholder="جستجو در دوره‌ها..." class="w-44 rounded-full bg-brand-cream px-4 py-2 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand">
   </form>
 
+  <a href="#" aria-label="حساب کاربری" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow-sm">👤</a>
+
   <button type="button" class="menu-btn grid h-10 w-10 cursor-pointer place-items-center rounded-full bg-white shadow-sm md:hidden" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-menu">
     <svg class="menu-open h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
     <svg class="menu-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
   </button>
 
-  <a href="#" aria-label="حساب کاربری" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow-sm">👤</a>
+  
 </div>
 
 
@@ -62,26 +64,28 @@
 
     <!-- هیرو -->
     <section class="relative isolate flex min-h-[34rem] items-center overflow-hidden pb-16 pt-32">
-<img src="images/hero-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-15 md:opacity-100">
-<div class="absolute inset-0 -z-10 hidden bg-gradient-to-l from-brand-cream/15 to-transparent md:block"></div>
+      <img src="images/hero-bg.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-15 md:opacity-100">
+       <div class="absolute inset-0 -z-10 hidden bg-gradient-to-l from-brand-cream/15 to-transparent md:block"></div>
 
       <div class="mx-auto w-full max-w-6xl px-5">
         <div class="max-w-xl">
-          <p class="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-sand/50 px-4 py-1 text-xs">
-            <span class="h-2 w-2 rounded-full bg-brand-ink"></span>
-            آکادمی آنلاین اسکیلورا
-          </p>
-          <h1 class="text-4xl font-extrabold leading-snug md:text-5xl">
+           <p class="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-sand/50 px-4 py-1 text-xs">
+             <span class="h-2 w-2 rounded-full bg-brand-ink"></span>
+             آکادمی آنلاین اسکیلورا
+           </p>
+           <h1 class="text-4xl font-extrabold leading-snug md:text-5xl">
             مهارت‌های آینده را امروز
             یاد بگیر!
-          </h1>
-          <p class="mt-5 leading-8 text-brand-ink/70">
+           </h1>
+           <p class="mt-5 leading-8 text-brand-ink/70">
             دوره‌های کاربردی و پروژه‌محور برای رشد فردی و حرفه‌ای شما در دنیای مدرن.
-          </p>
+           </p>
           <div class="mt-8 flex flex-wrap items-center gap-4">
             <a href="#courses" class="rounded-full bg-brand-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-ink/85">مشاهده دوره‌ها</a>
             <a href="#why" class="flex items-center gap-3 text-sm">
-              <span aria-hidden="true" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow">▶</span>
+              <span aria-hidden="true" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+              </span>
               معرفی پلتفرم
             </a>
           </div>
@@ -406,7 +410,7 @@
 
     <ul class="mt-6 space-y-3">
       <li class="rounded-2xl bg-white">
-        <button type="button" class="faq-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium">
+        <button type="button" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-3 px-4 py-3.5 text-start text-xs font-medium md:px-5 md:py-4 md:text-sm">
           آیا دوره‌ها دارای مدرک هستند؟
           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
            <path d="m6 9 6 6 6-6" />
@@ -416,7 +420,7 @@
       </li>
 
       <li class="rounded-2xl bg-white">
-        <button type="button" class="faq-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" >
+        <button type="button" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-3 px-4 py-3.5 text-start text-xs font-medium md:px-5 md:py-4 md:text-sm">
           چگونه در دوره‌ها شرکت کنم؟
           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="m6 9 6 6 6-6" />
@@ -426,7 +430,7 @@
       </li>
 
       <li class="rounded-2xl bg-white">
-        <button type="button" class="faq-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium">
+        <button type="button" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-3 px-4 py-3.5 text-start text-xs font-medium md:px-5 md:py-4 md:text-sm">
           آیا امکان پرداخت اقساطی وجود دارد؟
           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="m6 9 6 6 6-6" />
@@ -446,13 +450,13 @@
 
   <!-- فوتر -->
   <footer class="mt-10 bg-brand-ink text-brand-mist">
-    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-4">
-      <section>
+    <div class="mx-auto grid max-w-6xl grid-cols-[auto_auto] justify-center gap-x-12 gap-y-8 px-5 py-12 text-center md:grid-cols-4 md:justify-normal md:gap-x-8 md:text-start">
+      <section class="col-span-2 md:col-span-1">
         <p class="text-xl font-extrabold text-white">🎓 Skillora</p>
         <p class="mt-2 text-sm">یادگیری، یک قدم تا موفقیت</p>
       </section>
 
-      <nav aria-label="لینک‌های سریع">
+      <nav aria-label="لینک‌های سریع" class="text-start">
         <h2 class="mb-3 font-bold text-white">لینک‌های سریع</h2>
         <ul class="space-y-2 text-sm">
           <li><a href="#top" class="transition hover:text-white">خانه</a></li>
@@ -462,9 +466,9 @@
         </ul>
       </nav>
 
-      <nav aria-label="دسته‌بندی‌ها">
+      <nav aria-label="دسته‌بندی‌ها" class="text-start">
         <h2 class="mb-3 font-bold text-white">دسته‌بندی‌ها</h2>
-        <ul class="space-y-2 text-sm">
+        <ul class="space-y-2 text-sm ">
           <li><a href="#" class="transition hover:text-white">عکاسی و تدوین</a></li>
           <li><a href="#" class="transition hover:text-white">طراحی و گرافیک</a></li>
           <li><a href="#" class="transition hover:text-white">زبان‌های خارجی</a></li>
@@ -472,9 +476,9 @@
         </ul>
       </nav>
 
-      <section>
+      <section class="col-span-2 md:col-span-1">
         <h2 class="mb-3 font-bold text-white">ما را دنبال کنید</h2>
-        <ul class="flex gap-3">
+        <ul class="flex justify-center gap-3 md:justify-start">
           <li>
             <a href="#" aria-label="اینستاگرام" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-lg text-white transition hover:bg-white/20">
               <i class="fa-brands fa-instagram" aria-hidden="true"></i>
