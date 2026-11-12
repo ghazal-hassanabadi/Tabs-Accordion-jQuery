@@ -27,7 +27,7 @@
 
 - HTML5 (ساختار معنایی و RTL)
 - **Tailwind CSS v4** با CLI (رنگ‌ها و فونت سفارشی در `@theme`)
-- **jQuery 3.7.1** (نسخه‌ی اول جاوااسکریپت)
+- jQuery 
 - **JavaScript خام (Vanilla)** (نسخه‌ی دوم جاوااسکریپت)
 - Font Awesome (آیکون شبکه‌های اجتماعی) و فونت Vazirmatn
 
