@@ -69,67 +69,56 @@
 
     <!-- دسته‌بندی و دوره -->
     <section id="courses" class="mx-auto max-w-6xl px-5 py-10">
-<nav aria-label="دسته‌بندی دوره‌ها">
-  <ul class="flex gap-2 overflow-x-auto">
-    <li class="shrink-0">
-      <button type="button" data-tab="photo" aria-selected="true" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">📷 عکاسی و تدوین</button>
-    </li>
-    <li class="shrink-0">
-      <button type="button" data-tab="design" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">✏️ طراحی و گرافیک</button>
-    </li>
-    <li class="shrink-0">
-      <button type="button" data-tab="language" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">🌐 زبان‌های خارجی</button>
-    </li>
-    <li class="shrink-0">
-      <button type="button" data-tab="marketing" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">📊 بازاریابی دیجیتال</button>
-    </li>
-    <li class="shrink-0">
-      <button type="button" data-tab="ai" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">🤖 هوش مصنوعی</button>
-    </li>
-    <li class="shrink-0">
-      <button type="button" data-tab="business" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">💼 کسب‌وکار</button>
-    </li>
-  </ul>
-</nav>
+      <nav aria-label="دسته‌بندی دوره‌ها">
+        <ul class="flex gap-2 overflow-x-auto">
+          <li class="shrink-0">
+            <button type="button" data-tab="photo" aria-selected="true" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">📷 عکاسی و تدوین</button>
+          </li>
+          <li class="shrink-0">
+            <button type="button" data-tab="design" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">✏️ طراحی و گرافیک</button>
+          </li>
+          <li class="shrink-0">
+            <button type="button" data-tab="language" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">🌐 زبان‌های خارجی</button>
+          </li>
+          <li class="shrink-0">
+            <button type="button" data-tab="marketing" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">📊 بازاریابی دیجیتال</button>
+          </li>
+          <li class="shrink-0">
+            <button type="button" data-tab="ai" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">🤖 هوش مصنوعی</button>
+          </li>
+          <li class="shrink-0">
+            <button type="button" data-tab="business" aria-selected="false" class="tab-btn block cursor-pointer rounded-t-2xl bg-white/60 px-6 py-4 text-sm text-brand-ink/70 transition hover:bg-white aria-selected:bg-brand-ink aria-selected:text-white">💼 کسب‌وکار</button>
+          </li>
+        </ul>
+      </nav>
 
+      <!-- تب عکاسی -->
       <article data-panel="photo" class="tab-panel grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
         <div>
           <h2 class="text-xl font-bold">📷 دوره عکاسی حرفه‌ای</h2>
           <p class="mt-3 text-sm leading-7 text-brand-ink/70">از عکاسی پایه تا ویرایش پیشرفته، با ما نگاهت را حرفه‌ای‌تر کن.</p>
 
-          <ul class="mt-6 space-y-3">
-            <li>
-              <details class="group rounded-2xl bg-brand-cream" open>
-                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-                  مبانی عکاسی
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-                </summary>
-                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">نور، ترکیب‌بندی و تنظیمات دوربین را از پایه یاد می‌گیری.</p>
-              </details>
+          <ul class="topic-list mt-6 space-y-3">
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+                مبانی عکاسی
+                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">نور، ترکیب‌بندی و تنظیمات دوربین را از پایه یاد می‌گیری.</p>
             </li>
-            <li>
-              <details class="group rounded-2xl bg-brand-cream">
-                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-                  ویرایش عکس
-              <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-              </svg>
-                </summary>
-                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">رنگ‌بندی، روتوش و ساخت یک سبک ثابت برای عکس‌هایت.</p>
-              </details>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                ویرایش عکس
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">رنگ‌بندی، روتوش و ساخت یک سبک ثابت برای عکس‌هایت.</p>
             </li>
-            <li>
-              <details class="group rounded-2xl bg-brand-cream">
-                <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-                  عکاسی با موبایل
-              <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-              </svg>
-                </summary>
-                <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">با گوشی هم می‌شود عکس حرفه‌ای گرفت؛ ترفندها را یاد می‌گیری.</p>
-              </details>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                عکاسی با موبایل
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">با گوشی هم می‌شود عکس حرفه‌ای گرفت؛ ترفندها را یاد می‌گیری.</p>
             </li>
           </ul>
 
@@ -138,255 +127,199 @@
 
         <figure class="relative overflow-hidden rounded-2xl md:order-first">
           <img src="images/p1.png" alt="عکاسی که دوربین در دست دارد" class="h-64 w-full object-cover md:h-80 xl:h-102">
-
         </figure>
       </article>
-      
+
+      <!-- تب طراحی -->
       <article data-panel="design" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
-  <div>
-    <h2 class="text-xl font-bold">✏️ دوره طراحی و گرافیک</h2>
-    <p class="mt-3 text-sm leading-7 text-brand-ink/70">از اصول طراحی تا ساخت پروژه‌های واقعی، خلاقیتت را به مهارت تبدیل کن.</p>
+        <div>
+          <h2 class="text-xl font-bold">✏️ دوره طراحی و گرافیک</h2>
+          <p class="mt-3 text-sm leading-7 text-brand-ink/70">از اصول طراحی تا ساخت پروژه‌های واقعی، خلاقیتت را به مهارت تبدیل کن.</p>
 
-    <ul class="mt-6 space-y-3">
-      <li>
-        <details class="group rounded-2xl bg-brand-cream" open>
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            اصول طراحی
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">رنگ، تایپوگرافی، چیدمان و تعادل بصری را از پایه یاد می‌گیری.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            طراحی لوگو و هویت بصری
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">مراحل ساخت یک برند از ایده تا نسخه‌ی نهایی را قدم‌به‌قدم می‌سازی.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            طراحی رابط کاربری
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">صفحه‌ها و محصولات دیجیتال ساده و کاربرپسند طراحی می‌کنی.</p>
-        </details>
-      </li>
-    </ul>
+          <ul class="topic-list mt-6 space-y-3">
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+                اصول طراحی
+                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">رنگ، تایپوگرافی، چیدمان و تعادل بصری را از پایه یاد می‌گیری.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                طراحی لوگو و هویت بصری
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">مراحل ساخت یک برند از ایده تا نسخه‌ی نهایی را قدم‌به‌قدم می‌سازی.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                طراحی رابط کاربری
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">صفحه‌ها و محصولات دیجیتال ساده و کاربرپسند طراحی می‌کنی.</p>
+            </li>
+          </ul>
 
-    <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
-  </div>
+          <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
+        </div>
 
-  <figure class="relative overflow-hidden rounded-2xl md:order-first">
-    <img src="images/p2.png" alt="میز کار طراحی گرافیک" class="h-64 w-full object-cover md:h-80 xl:h-102">
-  </figure>
-</article>
+        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+          <img src="images/p2.png" alt="میز کار طراحی گرافیک" class="h-64 w-full object-cover md:h-80 xl:h-102">
+        </figure>
+      </article>
 
-<article data-panel="language" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
-  <div>
-    <h2 class="text-xl font-bold">🌐 دوره زبان‌های خارجی</h2>
-    <p class="mt-3 text-sm leading-7 text-brand-ink/70">از مکالمه‌ی روزمره تا مهارت‌های حرفه‌ای، زبان را واقعی یاد بگیر.</p>
+      <!-- تب زبان -->
+      <article data-panel="language" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
+        <div>
+          <h2 class="text-xl font-bold">🌐 دوره زبان‌های خارجی</h2>
+          <p class="mt-3 text-sm leading-7 text-brand-ink/70">از مکالمه‌ی روزمره تا مهارت‌های حرفه‌ای، زبان را واقعی یاد بگیر.</p>
 
-    <ul class="mt-6 space-y-3">
-      <li>
-        <details class="group rounded-2xl bg-brand-cream" open>
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            مکالمه‌ی روزمره
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">با تمرین گفتگوهای واقعی، راحت و روان صحبت کردن را شروع می‌کنی.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            لغت و گرامر کاربردی
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">فقط چیزهایی را یاد می‌گیری که واقعاً در مکالمه و نوشتن لازم می‌شود.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            آمادگی آزمون‌های بین‌المللی
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">با نمونه‌سؤال و تمرین زمان‌دار برای آزمون‌های مهم آماده می‌شوی.</p>
-        </details>
-      </li>
-    </ul>
+          <ul class="topic-list mt-6 space-y-3">
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+                مکالمه‌ی روزمره
+                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">با تمرین گفتگوهای واقعی، راحت و روان صحبت کردن را شروع می‌کنی.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                لغت و گرامر کاربردی
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">فقط چیزهایی را یاد می‌گیری که واقعاً در مکالمه و نوشتن لازم می‌شود.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                آمادگی آزمون‌های بین‌المللی
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">با نمونه‌سؤال و تمرین زمان‌دار برای آزمون‌های مهم آماده می‌شوی.</p>
+            </li>
+          </ul>
 
-    <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
-  </div>
+          <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
+        </div>
 
-  <figure class="relative overflow-hidden rounded-2xl md:order-first">
-    <img src="images/p3.png" alt="دانشجویی که زبان یاد می‌گیرد" class="h-64 w-full object-cover md:h-80 xl:h-102">
-  </figure>
-</article>
+        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+          <img src="images/p3.png" alt="دانشجویی که زبان یاد می‌گیرد" class="h-64 w-full object-cover md:h-80 xl:h-102">
+        </figure>
+      </article>
 
-<article data-panel="marketing" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
-  <div>
-    <h2 class="text-xl font-bold">📊 دوره بازاریابی دیجیتال</h2>
-    <p class="mt-3 text-sm leading-7 text-brand-ink/70">از طراحی استراتژی تا اجرا و اندازه‌گیری نتیجه، همه‌چیز را عملی یاد می‌گیری.</p>
+      <!-- تب بازاریابی -->
+      <article data-panel="marketing" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
+        <div>
+          <h2 class="text-xl font-bold">📊 دوره بازاریابی دیجیتال</h2>
+          <p class="mt-3 text-sm leading-7 text-brand-ink/70">از طراحی استراتژی تا اجرا و اندازه‌گیری نتیجه، همه‌چیز را عملی یاد می‌گیری.</p>
 
-    <ul class="mt-6 space-y-3">
-      <li>
-        <details class="group rounded-2xl bg-brand-cream" open>
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            مبانی بازاریابی دیجیتال
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">مخاطب، هدف و مسیر جذب مشتری را از ابتدا درست تعریف می‌کنی.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            تولید محتوا و شبکه‌های اجتماعی
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">محتوایی می‌سازی که دیده شود و مخاطب را به اقدام برساند.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            تحلیل داده و بهینه‌سازی
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">از روی عددها می‌فهمی چه کاری جواب داده و کجا باید تغییر بدهی.</p>
-        </details>
-      </li>
-    </ul>
+          <ul class="topic-list mt-6 space-y-3">
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+                مبانی بازاریابی دیجیتال
+                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">مخاطب، هدف و مسیر جذب مشتری را از ابتدا درست تعریف می‌کنی.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                تولید محتوا و شبکه‌های اجتماعی
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">محتوایی می‌سازی که دیده شود و مخاطب را به اقدام برساند.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                تحلیل داده و بهینه‌سازی
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">از روی عددها می‌فهمی چه کاری جواب داده و کجا باید تغییر بدهی.</p>
+            </li>
+          </ul>
 
-    <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
-  </div>
+          <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
+        </div>
 
-  <figure class="relative overflow-hidden rounded-2xl md:order-first">
-    <img src="images/p4.png" alt="نمودارهای تحلیل بازاریابی" class="h-64 w-full object-cover md:h-80 xl:h-102">
-  </figure>
-</article>
+        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+          <img src="images/p4.png" alt="نمودارهای تحلیل بازاریابی" class="h-64 w-full object-cover md:h-80 xl:h-102">
+        </figure>
+      </article>
 
-<article data-panel="ai" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
-  <div>
-    <h2 class="text-xl font-bold">🤖 دوره هوش مصنوعی</h2>
-    <p class="mt-3 text-sm leading-7 text-brand-ink/70">با ابزارهای هوش مصنوعی، سرعت و کیفیت کارت را بالا ببر.</p>
+      <!-- تب هوش مصنوعی -->
+      <article data-panel="ai" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
+        <div>
+          <h2 class="text-xl font-bold">🤖 دوره هوش مصنوعی</h2>
+          <p class="mt-3 text-sm leading-7 text-brand-ink/70">با ابزارهای هوش مصنوعی، سرعت و کیفیت کارت را بالا ببر.</p>
 
-    <ul class="mt-6 space-y-3">
-      <li>
-        <details class="group rounded-2xl bg-brand-cream" open>
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            آشنایی با هوش مصنوعی
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">می‌فهمی هوش مصنوعی چیست، چه کارهایی می‌کند و چه محدودیت‌هایی دارد.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            نوشتن دستور مؤثر
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">یاد می‌گیری سؤال و درخواستت را طوری بنویسی که جواب دقیق بگیری.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            کاربرد در کار روزمره
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">از نوشتن و خلاصه‌سازی تا تحلیل و برنامه‌ریزی، در کارهای واقعی ازش استفاده می‌کنی.</p>
-        </details>
-      </li>
-    </ul>
+          <ul class="topic-list mt-6 space-y-3">
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+                آشنایی با هوش مصنوعی
+                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">می‌فهمی هوش مصنوعی چیست، چه کارهایی می‌کند و چه محدودیت‌هایی دارد.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                نوشتن دستور مؤثر
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">یاد می‌گیری سؤال و درخواستت را طوری بنویسی که جواب دقیق بگیری.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                کاربرد در کار روزمره
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">از نوشتن و خلاصه‌سازی تا تحلیل و برنامه‌ریزی، در کارهای واقعی ازش استفاده می‌کنی.</p>
+            </li>
+          </ul>
 
-    <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
-  </div>
+          <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
+        </div>
 
-  <figure class="relative overflow-hidden rounded-2xl md:order-first">
-    <img src="images/p5.png" alt="رباتی که کنار انسان کار می‌کند" class="h-64 w-full object-cover md:h-80 xl:h-102">
-  </figure>
-</article>
+        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+          <img src="images/p5.png" alt="رباتی که کنار انسان کار می‌کند" class="h-64 w-full object-cover md:h-80 xl:h-102">
+        </figure>
+      </article>
 
-<article data-panel="business" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
-  <div>
-    <h2 class="text-xl font-bold">💼 دوره کسب‌وکار</h2>
-    <p class="mt-3 text-sm leading-7 text-brand-ink/70">از ایده‌ی اولیه تا اولین درآمد، مسیر ساخت یک کسب‌وکار را قدم‌به‌قدم می‌روی.</p>
+      <!-- تب کسب‌وکار -->
+      <article data-panel="business" class="tab-panel hidden grid items-center gap-8 rounded-b-3xl rounded-tl-3xl bg-white p-5 shadow-sm md:grid-cols-2 md:p-8">
+        <div>
+          <h2 class="text-xl font-bold">💼 دوره کسب‌وکار</h2>
+          <p class="mt-3 text-sm leading-7 text-brand-ink/70">از ایده‌ی اولیه تا اولین درآمد، مسیر ساخت یک کسب‌وکار را قدم‌به‌قدم می‌روی.</p>
 
-    <ul class="mt-6 space-y-3">
-      <li>
-        <details class="group rounded-2xl bg-brand-cream" open>
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            ایده‌پردازی و مدل کسب‌وکار
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">ایده‌ات را می‌سنجی و به یک مدل قابل اجرا تبدیل می‌کنی.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            مدیریت مالی و قیمت‌گذاری
-               <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">هزینه، سود و قیمت محصولت را درست حساب می‌کنی.</p>
-        </details>
-      </li>
-      <li>
-        <details class="group rounded-2xl bg-brand-cream">
-          <summary class="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-medium [&::-webkit-details-marker]:hidden">
-            فروش و ارتباط با مشتری
-                           <svg class="faq-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                 <path d="m6 9 6 6 6-6" />
-               </svg>
-          </summary>
-          <p class="px-5 pb-4 text-sm leading-7 text-brand-ink/70">مشتری پیدا می‌کنی و رابطه‌ای می‌سازی که ماندگار بماند.</p>
-        </details>
-      </li>
-    </ul>
+          <ul class="topic-list mt-6 space-y-3">
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="true">
+                ایده‌پردازی و مدل کسب‌وکار
+                <svg class="topic-icon h-5 w-5 rotate-180 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel px-5 pb-4 text-sm leading-7 text-brand-ink/70">ایده‌ات را می‌سنجی و به یک مدل قابل اجرا تبدیل می‌کنی.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                مدیریت مالی و قیمت‌گذاری
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">هزینه، سود و قیمت محصولت را درست حساب می‌کنی.</p>
+            </li>
+            <li class="rounded-2xl bg-brand-cream">
+              <button type="button" class="topic-btn flex w-full cursor-pointer items-center justify-between px-5 py-4 text-start text-sm font-medium" aria-expanded="false">
+                فروش و ارتباط با مشتری
+                <svg class="topic-icon h-5 w-5 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <p class="topic-panel hidden px-5 pb-4 text-sm leading-7 text-brand-ink/70">مشتری پیدا می‌کنی و رابطه‌ای می‌سازی که ماندگار بماند.</p>
+            </li>
+          </ul>
 
-    <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
-  </div>
+          <a href="#" class="mt-6 inline-block rounded-full bg-brand-ink px-6 py-2.5 text-sm text-white transition hover:bg-brand-ink/85">مشاهده دوره</a>
+        </div>
 
-  <figure class="relative overflow-hidden rounded-2xl md:order-first">
-    <img src="images/p6.png" alt="جلسه‌ی کاری یک تیم کسب‌وکار" class="h-64 w-full object-cover md:h-80 xl:h-102">
-  </figure>
-</article>
-      
+        <figure class="relative overflow-hidden rounded-2xl md:order-first">
+          <img src="images/p6.png" alt="جلسه‌ی کاری یک تیم کسب‌وکار" class="h-64 w-full object-cover md:h-80 xl:h-102">
+        </figure>
+      </article>
+
     </section>
 
     <!-- چرا اسکیلورا -->
