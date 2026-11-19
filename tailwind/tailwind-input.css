@@ -4,6 +4,7 @@
 @source "../js";
 @source "../index.html";
 @source "../contact.html";
+@source "../contact-jquery.html";
 
 @theme {
   --color-brand-ink: #202630;
