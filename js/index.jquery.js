@@ -8,6 +8,9 @@ $(function () {
     $(".faq-icon").removeClass("rotate-180");
     if (!panel.hasClass("hidden")) {
       $(this).find(".faq-icon").addClass("rotate-180");
+      $("#faq-img").attr("src", $(this).data("img"));
+    } else {
+      $("#faq-img").attr("src", $("#faq-img").data("default"));
     }
   });
 });

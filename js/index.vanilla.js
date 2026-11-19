@@ -15,8 +15,13 @@ faqButtons.forEach(function (btn) {
 
     panel.classList.toggle("hidden");
 
+    const faqImg = document.getElementById("faq-img");
+
     if (!panel.classList.contains("hidden")) {
       icon.classList.add("rotate-180");
+      faqImg.src = this.dataset.img;
+    } else {
+      faqImg.src = faqImg.dataset.default;
     }
   });
 });
