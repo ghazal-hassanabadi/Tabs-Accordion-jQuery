@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تماس با ما | اسکیلورا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tailwind/tailwind.css" />
+</head>
+
+<body id="top" class="bg-brand-cream text-brand-ink antialiased lg:flex lg:min-h-dvh lg:flex-col">
+
+  <!-- هدر -->
+  <header class="fixed inset-x-3 top-3 z-50 mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full bg-white/20 px-5 py-3 shadow-sm backdrop-blur">
+    <a href="index.html" class="flex items-center gap-2 text-xl font-extrabold">
+      <span aria-hidden="true">🎓</span>
+      Skillora
+    </a>
+
+    <nav aria-label="منوی اصلی" class="hidden md:block">
+      <ul class="flex items-center gap-6 text-sm text-brand-ink/70">
+        <li><a href="index.html" class="transition hover:text-brand-ink">خانه</a></li>
+        <li><a href="index.html#courses" class="transition hover:text-brand-ink">دوره‌ها</a></li>
+        <li><a href="index.html#why" class="transition hover:text-brand-ink">درباره ما</a></li>
+        <li><a href="contact.html" class="border-b-2 border-brand-sand pb-1 text-brand-ink">تماس با ما</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="#" aria-label="حساب کاربری" class="grid h-10 w-10 place-items-center rounded-full bg-white shadow-sm">👤</a>
+
+      <button type="button" class="menu-btn grid h-10 w-10 cursor-pointer place-items-center rounded-full bg-white shadow-sm md:hidden" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-open h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+        <svg class="menu-close hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" aria-label="منوی موبایل" class="mobile-menu absolute inset-x-0 top-full mt-2 hidden rounded-3xl bg-white p-4 shadow-lg md:hidden">
+      <ul class="space-y-1 text-sm">
+        <li><a href="index.html" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">خانه</a></li>
+        <li><a href="index.html#courses" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">دوره‌ها</a></li>
+        <li><a href="index.html#why" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">درباره ما</a></li>
+        <li><a href="contact.html" class="block rounded-2xl px-4 py-3 transition hover:bg-brand-cream">تماس با ما</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="lg:flex lg:flex-1 lg:flex-col">
+
+<!-- عنوان صفحه -->
+<section class="relative isolate flex min-h-64 items-center overflow-hidden pb-12 pt-32 md:min-h-80 md:pb-16 lg:min-h-0 lg:pb-5 lg:pt-24">
+
+  <img src="images/contact-hero.jpeg" alt="" class="absolute inset-x-0 bottom-0 -z-10 h-40 w-full object-cover object-left opacity-15 md:inset-0 md:h-full md:opacity-100">
+
+  <div class="mx-auto w-full max-w-6xl px-5">
+    <div class="max-w-xl">
+      <p class="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-sand/50 px-4 py-1 text-xs lg:mb-2">
+        <span class="h-2 w-2 rounded-full bg-brand-ink"></span>
+        پاسخگوی شما هستیم
+      </p>
+      <h1 class="text-4xl font-extrabold leading-snug md:text-5xl lg:text-4xl">تماس با ما</h1>
+      <p class="mt-4 leading-8 text-brand-ink/70 lg:mt-1 lg:leading-7">
+        سوال یا پیشنهادی داری؟ فرم زیر را پر کن تا تیم اسکیلورا در اسرع وقت جوابت را بدهد.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- فرم و اطلاعات تماس -->
+<section class="mx-auto w-full max-w-6xl px-5 py-10 lg:flex lg:flex-1 lg:items-center lg:py-4">
+
+  <article class="mx-auto w-full min-w-0 max-w-2xl rounded-3xl bg-white p-6 shadow-sm md:p-8 lg:p-6">
+    <h2 class="text-xl font-bold">ارسال پیام</h2>
+
+    <form id="contact-form" novalidate class="mt-6 space-y-5 lg:mt-3 lg:space-y-3">
+
+      <div class="space-y-5 lg:grid lg:grid-cols-2 lg:gap-4 lg:space-y-0">
+        <div>
+          <label for="name" class="mb-2 block text-sm font-medium lg:mb-1">نام شما</label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="نام شما..." aria-describedby="name-error"
+            class="w-full rounded-xl bg-brand-cream px-4 py-3 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand lg:py-2.5">
+          <p id="name-error" class="field-error mt-1 hidden text-xs text-red-700"></p>
+        </div>
+
+        <div>
+          <label for="email" class="mb-2 block text-sm font-medium lg:mb-1">ایمیل شما</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="ایمیل شما..." aria-describedby="email-error"
+            class="w-full rounded-xl bg-brand-cream px-4 py-3 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand lg:py-2.5">
+          <p id="email-error" class="field-error mt-1 hidden text-xs text-red-700"></p>
+        </div>
+      </div>
+
+      <div>
+        <label for="subject" class="mb-2 block text-sm font-medium lg:mb-1">موضوع پیام</label>
+        <select id="subject" name="subject" aria-describedby="subject-error"
+          class="w-full cursor-pointer rounded-xl bg-brand-cream px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-sand lg:py-2.5">
+          <option value="" selected disabled>انتخاب موضوع...</option>
+          <option value="support">پشتیبانی</option>
+          <option value="courses">سوال درباره دوره‌ها</option>
+          <option value="cooperation">همکاری</option>
+          <option value="other">سایر</option>
+        </select>
+        <p id="subject-error" class="field-error mt-1 hidden text-xs text-red-700"></p>
+      </div>
+
+      <div>
+        <label for="message" class="mb-2 block text-sm font-medium lg:mb-1">پیام شما</label>
+        <textarea id="message" name="message" rows="5" placeholder="پیام شما..." aria-describedby="message-error"
+          class="w-full resize-none rounded-xl bg-brand-cream px-4 py-3 text-sm placeholder:text-brand-mist focus:outline-none focus:ring-2 focus:ring-brand-sand lg:h-24 lg:py-2.5"></textarea>
+        <p id="message-error" class="field-error mt-1 hidden text-xs text-red-700"></p>
+      </div>
+
+      <button type="submit" id="submit-btn"
+        class="w-full cursor-pointer rounded-3xl bg-brand-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-ink/85 disabled:cursor-not-allowed disabled:opacity-60 lg:py-2.5">
+        ارسال پیام
+      </button>
+
+      <p id="success-msg" role="status" class="hidden rounded-xl bg-green-100 px-4 py-3 text-sm text-green-800 lg:py-2">
+        پیام شما با موفقیت ارسال شد!
+      </p>
+      <p id="error-msg" role="alert" class="hidden rounded-xl bg-red-100 px-4 py-3 text-sm text-red-800 lg:py-2">
+        ارسال پیام ناموفق بود. لطفاً دوباره تلاش کن.
+      </p>
+
+    </form>
+  </article>
+
+
+
+</section>
+
+  </main>
+
+  <!-- فوتر -->
+  <footer class="mt-10 bg-brand-ink text-brand-mist">
+    <div class="mx-auto grid max-w-6xl grid-cols-[auto_auto] justify-center gap-x-12 gap-y-8 px-5 py-12 text-center md:grid-cols-3 md:justify-normal md:gap-x-8 md:text-start">
+      <section class="col-span-2 md:col-span-1">
+        <p class="text-xl font-extrabold text-white">🎓 Skillora</p>
+        <p class="mt-2 text-sm">یادگیری، یک قدم تا موفقیت</p>
+      </section>
+
+      <nav aria-label="لینک‌های سریع" class="text-start">
+        <h2 class="mb-3 font-bold text-white">لینک‌های سریع</h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="transition hover:text-white">خانه</a></li>
+          <li><a href="index.html#courses" class="transition hover:text-white">دوره‌ها</a></li>
+          <li><a href="index.html#why" class="transition hover:text-white">درباره ما</a></li>
+          <li><a href="contact.html" class="transition hover:text-white">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="دسته‌بندی‌ها" class="text-start">
+        <h2 class="mb-3 font-bold text-white">دسته‌بندی‌ها</h2>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="transition hover:text-white">عکاسی و تدوین</a></li>
+          <li><a href="#" class="transition hover:text-white">طراحی و گرافیک</a></li>
+          <li><a href="#" class="transition hover:text-white">زبان‌های خارجی</a></li>
+          <li><a href="#" class="transition hover:text-white">بازاریابی دیجیتال</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p class="border-t border-white/10 py-5 text-center text-xs">© 2025 Skillora. All rights reserved.</p>
+  </footer>
+
+  <!-- jQuery -->
+  <!--
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/contact.jquery.js"></script>
+  -->
+
+  <!-- js -->
+  <script src="js/contact.vanilla.js"></script>
+
+</body>
+</html>

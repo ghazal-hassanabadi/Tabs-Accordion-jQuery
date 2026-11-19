@@ -2,6 +2,8 @@
 
 @source "../html";
 @source "../js";
+@source "../index.html";
+@source "../contact.html";
 
 @theme {
   --color-brand-ink: #202630;
@@ -10,4 +12,33 @@
   --color-brand-mist: #A8A29A;
 
   --font-sans: "Vazirmatn", Tahoma, sans-serif;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+::picker(select) {
+  background: white;
+  border: 0;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  position-try-fallbacks: none;
+}
+
+select option {
+  padding: 0.6rem 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+select option:hover,
+select option:checked {
+  background: var(--color-brand-cream);
+}
+
+select option::checkmark {
+  display: none;
 }
