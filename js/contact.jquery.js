@@ -38,5 +38,30 @@ $(function () {
     } else {
       $("#message-error").addClass("hidden");
     }
+    const hasErrors = $(".field-error:not(.hidden)").length > 0;
+
+    if (hasErrors) {
+      return;
+    }
+
+    const $btn = $("#submit-btn");
+    $btn.prop("disabled", true);
+    $("#success-msg, #error-msg").stop(true, true).hide();
+
+    $.ajax({
+      url: "https://jsonplaceholder.typicode.com/posts",
+      method: "POST",
+      data: { name: name, email: email, subject: subject, message: message }
+    })
+      .done(function () {
+        $("#success-msg").fadeIn(300).delay(4000).fadeOut(300);
+        $form[0].reset();
+      })
+      .fail(function () {
+        $("#error-msg").fadeIn(300);
+      })
+      .always(function () {
+        $btn.prop("disabled", false);
+      });
   });
 });
