@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="tailwind/tailwind.css" />
 </head>
 
@@ -134,38 +135,97 @@
 
   </main>
 
-  <!-- فوتر -->
-  <footer class="mt-10 bg-brand-ink text-brand-mist">
-    <div class="mx-auto grid max-w-6xl grid-cols-[auto_auto] justify-center gap-x-12 gap-y-8 px-5 py-12 text-center md:grid-cols-3 md:justify-normal md:gap-x-8 md:text-start">
-      <section class="col-span-2 md:col-span-1">
-        <p class="text-xl font-extrabold text-white">🎓 Skillora</p>
-        <p class="mt-2 text-sm">یادگیری، یک قدم تا موفقیت</p>
-      </section>
+<!-- -----footer------- -->
 
-      <nav aria-label="لینک‌های سریع" class="text-start">
-        <h2 class="mb-3 font-bold text-white">لینک‌های سریع</h2>
-        <ul class="space-y-2 text-sm">
-          <li><a href="index.html" class="transition hover:text-white">خانه</a></li>
-          <li><a href="index.html#courses" class="transition hover:text-white">دوره‌ها</a></li>
-          <li><a href="index.html#why" class="transition hover:text-white">درباره ما</a></li>
-          <li><a href="contact.html" class="transition hover:text-white">تماس با ما</a></li>
-        </ul>
-      </nav>
-
-      <nav aria-label="دسته‌بندی‌ها" class="text-start">
-        <h2 class="mb-3 font-bold text-white">دسته‌بندی‌ها</h2>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="transition hover:text-white">عکاسی و تدوین</a></li>
-          <li><a href="#" class="transition hover:text-white">طراحی و گرافیک</a></li>
-          <li><a href="#" class="transition hover:text-white">زبان‌های خارجی</a></li>
-          <li><a href="#" class="transition hover:text-white">بازاریابی دیجیتال</a></li>
-        </ul>
-      </nav>
+<section class="relative z-10 mx-auto -mb-16 mt-10 w-full max-w-6xl px-5">
+  <div class="flex flex-col items-center justify-between gap-4 rounded-3xl bg-brand-sand p-8 text-center shadow-lg md:flex-row md:text-start">
+    <div>
+      <h2 class="text-xl font-extrabold text-brand-ink">آماده‌ای مهارت جدیدت را شروع کنی؟</h2>
+      <p class="mt-1 text-sm text-brand-ink/70">همین امروز اولین دوره‌ات را انتخاب کن.</p>
     </div>
+    <a href="index.html#courses" class="shrink-0 rounded-full bg-brand-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-ink/85">مشاهده دوره‌ها</a>
+  </div>
+</section>
 
-    <p class="border-t border-white/10 py-5 text-center text-xs">© 2025 Skillora. All rights reserved.</p>
-  </footer>
 
+<footer class="relative overflow-hidden rounded-t-[2.5rem] bg-brand-ink pt-24 text-brand-mist">
+
+  <!-- واترمارک -->
+  <span aria-hidden="true" class="pointer-events-none absolute inset-x-0 -bottom-2 select-none text-center text-[20vw] font-extrabold leading-none text-white/5 md:-bottom-6 md:text-[14rem]">Skillora</span>
+
+  <div class="relative z-10 mx-auto grid max-w-6xl grid-cols-2 gap-x-6 gap-y-8 px-5 py-12 text-center md:grid-cols-4 md:gap-x-8 md:text-start">
+
+    
+    <section class="col-span-2 md:col-span-1">
+      <p class="text-xl font-extrabold text-white">🎓 Skillora</p>
+      <p class="mt-2 text-sm">یادگیری، یک قدم تا موفقیت</p>
+    </section>
+
+    
+    <nav aria-label="لینک‌های سریع" class="text-center md:text-start">
+      <h2 class="mb-3 font-bold text-white">لینک‌های سریع</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html" class="inline-block transition hover:-translate-x-1 hover:text-white">خانه</a></li>
+        <li><a href="index.html#courses" class="inline-block transition hover:-translate-x-1 hover:text-white">دوره‌ها</a></li>
+        <li><a href="index.html#why" class="inline-block transition hover:-translate-x-1 hover:text-white">درباره ما</a></li>
+        <li class="hidden md:list-item"><a href="index.html#faq" class="inline-block transition hover:-translate-x-1 hover:text-white">سوالات متداول</a></li>
+        <li><a href="contact.html" class="inline-block transition hover:-translate-x-1 hover:text-white">تماس با ما</a></li>
+      </ul>
+    </nav>
+
+    
+    <nav aria-label="دسته‌بندی‌ها" class="text-center md:text-start">
+      <h2 class="mb-3 font-bold text-white">دسته‌بندی‌ها</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="index.html#courses" class="inline-block transition hover:-translate-x-1 hover:text-white">عکاسی و تدوین</a></li>
+        <li><a href="index.html#courses" class="inline-block transition hover:-translate-x-1 hover:text-white">طراحی و گرافیک</a></li>
+        <li><a href="index.html#courses" class="inline-block transition hover:-translate-x-1 hover:text-white">زبان‌های خارجی</a></li>
+        <li><a href="index.html#courses" class="inline-block transition hover:-translate-x-1 hover:text-white">بازاریابی دیجیتال</a></li>
+      </ul>
+    </nav>
+
+    <!-- تماس و شبکه‌های اجتماعی -->
+    <section class="col-span-2 md:col-span-1">
+      <h2 class="mb-3 font-bold text-white">ارتباط با ما</h2>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-center justify-center gap-2 md:justify-start">
+          <i class="fa-solid fa-envelope text-brand-sand" aria-hidden="true"></i>
+          <a href="mailto:info@skillora.ir" class="transition hover:text-white">info@skillora.ir</a>
+        </li>
+        <li class="flex items-center justify-center gap-2 md:justify-start">
+          <i class="fa-solid fa-phone text-brand-sand" aria-hidden="true"></i>
+          <a href="tel:+982100000000" dir="ltr" class="transition hover:text-white">۰۲۱-۰۰۰۰۰۰۰۰</a>
+        </li>
+        <li class="flex items-center justify-center gap-2 md:justify-start">
+          <i class="fa-solid fa-location-dot text-brand-sand" aria-hidden="true"></i>
+          <span>تهران، ایران</span>
+        </li>
+      </ul>
+
+      <ul class="mt-5 flex justify-center gap-3 md:justify-start">
+        <li>
+          <a href="#" aria-label="اینستاگرام" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-lg text-white transition hover:-translate-y-1 hover:bg-white/20">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="تلگرام" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-lg text-white transition hover:-translate-y-1 hover:bg-white/20">
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="لینکدین" target="_blank" rel="noopener noreferrer" class="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-lg text-white transition hover:-translate-y-1 hover:bg-white/20">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="relative z-10 border-t border-white/10 py-5 text-center text-xs">
+    © 2026 Skillora. All rights reserved.
+  </p>
+</footer>
 
   <script src="js/contact.vanilla.js"></script>
 
