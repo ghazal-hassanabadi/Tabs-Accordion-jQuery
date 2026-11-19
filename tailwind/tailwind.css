@@ -348,6 +348,9 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .h-95 {
+    height: calc(var(--spacing) * 95);
+  }
   .h-\[380px\] {
     height: 380px;
   }
@@ -828,6 +831,9 @@
     -webkit-user-select: none;
     user-select: none;
   }
+  .not-\[\.hidden\]\:grid:not(:is(.hidden)) {
+    display: grid;
+  }
   .placeholder\:text-brand-mist::placeholder {
     color: var(--color-brand-mist);
   }
@@ -922,6 +928,9 @@
     }
     .md\:min-h-80 {
       min-height: calc(var(--spacing) * 80);
+    }
+    .md\:min-h-97\.5 {
+      min-height: calc(var(--spacing) * 97.5);
     }
     .md\:min-h-\[390px\] {
       min-height: 390px;
